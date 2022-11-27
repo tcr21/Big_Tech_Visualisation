@@ -1,0 +1,60 @@
+.container {
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+}
+
+.navbarStyle {
+  height: 80px;
+  display: flex;
+  position: relative;
+  background-color: #040f22;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.iconStyle {
+  color: #2090ff;
+  font-size: 50px;
+}
+
+.titleStyle {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto 0px;
+  color: #fff;
+}
+
+.buttonStyle {
+  position: absolute;
+  right: 20px;
+}
+
+.fireStyles {
+  color: #2090ff;
+  position: relative;
+  margin-left: auto;
+  font-size: 35px;
+  height: 45px;
+  width: 45px;
+  background-color: #b8dcff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-shadow: none;
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #2090ff;
+      color: #9accfd;
+    }
+    100% {
+      box-shadow: 0 0 15px #2090ff;
+      color: #2090ff;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Ignore files for Heroku
+
+/tests
+/add_articles_to_graph
+/scraper_app
+/graph_db_generator

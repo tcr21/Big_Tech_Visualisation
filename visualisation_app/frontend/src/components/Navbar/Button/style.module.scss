@@ -1,0 +1,30 @@
+.buttonStyle {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: color 200ms ease;
+  box-shadow: 0px 0px 0px 1px #e7e7e9 inset;
+
+  &:active {
+    background-color: #dfdfdf;
+  }
+}
+
+.iconStyle {
+  color: #000;
+  margin-right: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.textStyle {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}

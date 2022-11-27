@@ -1,0 +1,40 @@
+# Ignore venv
+env/
+venv/
+flask_app/
+
+# created by virtualenv automatically
+scraper/*.csv
+scraper/*.json
+scraper/*.txt
+scraper/dbs/*
+*.pyc
+
+# Flask stuff
+instance/
+
+# ignore database outputs
+**/db_output.txt
+graph_db_generator/loc.json
+
+# Dependencies
+node_modules
+
+# Environments
+.env
+
+# NER model
+add_articles_to_graph/nlp/ner/NER_model1
+
+# Other models/ pickle files
+add_articles_to_graph/nlp/ner/keyword_list.pickle
+add_articles_to_graph/nlp/ner/products.pickle
+add_articles_to_graph/nlp/ner/srl.pickle
+
+add_articles_to_graph/nlp/topic_classifier/setup/pickle/classifier.pickle
+
+graph_db_generator/entities.pickle
+
+
+
+

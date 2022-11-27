@@ -1,0 +1,32 @@
+before_script:
+  - apt-get update
+  - apt-get install -y python3-pip
+  - apt-get install -y python3-venv
+  - python3 -m venv venv
+  - . venv/bin/activate
+
+stages:
+  - build_test
+  - deploy
+
+build_test:
+  stage: build_test
+  script:
+    - echo "Building"
+    - python -V
+    - pip install -r requirements-dev.txt
+    - echo "Testing"
+    - pytest
+
+deploy:
+  stage: deploy
+  image: ruby:latest
+  script:
+    - pip install -r requirements.txt
+    - echo "Deploying to Heroku"
+    - apt-get update -yq
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
+  only:
+    - master
