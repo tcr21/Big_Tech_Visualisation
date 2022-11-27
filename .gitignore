@@ -32,8 +32,11 @@ add_articles_to_graph/nlp/ner/products.pickle
 add_articles_to_graph/nlp/ner/srl.pickle
 
 add_articles_to_graph/nlp/topic_classifier/setup/pickle/classifier.pickle
+add_articles_to_graph/nlp/topic_classifier/setup/data/News_Category_Dataset_v2.json
 
 graph_db_generator/entities.pickle
+
+
 
 
 
